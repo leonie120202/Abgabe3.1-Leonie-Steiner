@@ -5,12 +5,12 @@
  */
 function showRandomImageAtStart() {
     const thumbnailLinks = document.querySelectorAll('card-link');
-    const randomLink = thumbnailLinks[getRandomInt(0, links.length)];
-    const imageUrl = randomLink.href;
-    const randomIndex = getRandomInt(0, thumbnailLinks.length);
-    const imageDescription = randomLink.getAttribute('img').alt;
+    const randLink = thumbnailLinks[getRandomInt(0, links.length)];
+    const imageUrl = randLink.href;
+    const randIndex = getRandomInt(0, thumbnailLinks.length);
+    const imageDescription = randLink.getAttribute('img').alt;
     switchFullImage(imageDescription, imageUrl);
-    const randomCardElement = randomLink.nextElementSibling;
+    const randomCardElement = randLink.nextElementSibling;
     randomCardElement.classList.add('bg-dark');
     randomCardElement.classList.add('text-white');
 }
