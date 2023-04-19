@@ -16,7 +16,7 @@ function showRandomImageAtStart() {
 }
 
 function prepareLinks() {
-    const thumbnailLinks = document.getElementById('thumb');
+    const thumbnailLinks = document.getElementById('thumbnails');
     const links = thumbnailLinks.querySelectorAll('a');
     links.forEach(function (linked) {
         linked.addEventListener('click', function(event) {
