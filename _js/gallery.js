@@ -4,7 +4,7 @@
  * Selects a random full image at the start and displays it.
  */
 function showRandomImageAtStart() {
-    const thumbnailLinks = document.querySelectorAll('thumb-link');
+    const thumbnailLinks = document.querySelectorAll('card-link');
     const randomLink = thumbnailLinks[getRandomInt(0, links.length)];
     const imageUrl = randomLink.href;
     const randomIndex = getRandomInt(0, thumbnailLinks.length);
